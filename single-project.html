@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Riyadh Villa | MEGA POWER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Swiper JS for image gallery -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body class="light-mode">
+    <header class="main-header">
+    
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/mega-power-logo.png" alt="MEGA POWER Logo" class="logo-light">
+                <img src="assets/mega-power-logo.png" alt="MEGA POWER Logo" class="logo-dark">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-lang-key="navHome">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link" data-lang-key="navProducts">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="menu-column"><h3 data-lang-key="navByCategory">By Category</h3><a href="#">Residential Series</a><a href="#">Commercial Series</a></div>
+                            <div class="menu-column"><h3 data-lang-key="navByCapacity">By Capacity</h3><a href="single-product.html">5.12 kWh (MP-H5)</a><a href="#">10.24 kWh (MP-H10)</a></div>
+                            <div class="menu-column featured-product"><img src="assets/product1.png" alt="Featured Product"><h4 data-lang-key="navFeatured">Featured: MP-H10</h4></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="projects.html" class="nav-link" data-lang-key="navProjects">Projects</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link" data-lang-key="navNews">News</a></li>
+                <!--<li class="nav-item"><a href="contact.html" class="nav-link" data-lang-key="navContact">Contact Us</a></li>!-->
+            </ul>
+            <div class="controls">
+                <button id="theme-switcher" aria-label="Switch Theme">🌙</button>
+                <button id="lang-switcher" aria-label="Switch Language">AR</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="project-detail-page">
+            <!-- Project Header -->
+            <header class="project-header" data-aos="fade-in">
+                <h1>Riyadh Villa Solar Project</h1>
+                <div class="project-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Location: Riyadh, KSA</span>
+                    <span><i class="fas fa-tag"></i> Category: Residential</span>
+                    <span><i class="fas fa-calendar-alt"></i> Completed: Sep 2024</span>
+                </div>
+            </header>
+
+            <!-- Image Gallery Slider -->
+            <section class="project-gallery-slider" data-aos="fade-up">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/project.png" alt="Installation view"></div>
+                        <div class="swiper-slide"><img src="assets/project.png" alt="Battery system close-up"></div>
+                        <div class="swiper-slide"><img src="assets/project.png" alt="Happy client's home"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <!-- Project Details & Testimonial -->
+            <section class="project-content-wrapper">
+                <div class="project-details-content" data-aos="fade-right">
+                    <h2>The Challenge</h2>
+                    <p>The homeowner, Mr. Ahmed, was facing frequent power outages that disrupted his family's daily life and work-from-home schedule. He also wanted to maximize the benefit from his rooftop solar panels and reduce his carbon footprint.</p>
+                    
+                    <h2>The Solution</h2>
+                    <p>MEGA POWER designed and installed a comprehensive energy solution featuring:</p>
+                    <ul>
+                        <li><strong>One MEGA POWER MP-H15 (15.36 kWh)</strong> battery unit.</li>
+                        <li>Seamless integration with the existing 10kW solar PV system.</li>
+                        <li>Smart configuration to prioritize self-consumption of solar energy and provide instant, automatic backup power.</li>
+                    </ul>
+
+                    <h2>The Result</h2>
+                    <p>The system now provides over 95% energy independence for the family. Mr. Ahmed enjoys uninterrupted power and has seen a reduction of over 80% in his monthly electricity bills.</p>
+                </div>
+                
+                <!-- Client Testimonial -->
+                <aside class="client-testimonial" data-aos="fade-left">
+                    <div class="testimonial-box">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="testimonial-text">"Working with MEGA POWER was a game-changer. The installation was professional, and the system works flawlessly. We haven't noticed a single power cut since it was installed. I highly recommend them to anyone considering energy storage."</p>
+                        <div class="client-info">
+                            <img src="assets/client-ahmed.jpg" alt="Mr. Ahmed" class="client-avatar">
+                            <div class="client-details">
+                                <span class="client-name">Ahmed Al-Qahtani</span>
+                                <span class="client-title">Homeowner, Riyadh</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </article>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <img src="assets/mega-power-logo-white.png" alt="Logo" class="footer-logo">
+                <p data-lang-key="footerSlogan">Your trusted partner for energy storage solutions.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerQuickLinks">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-lang-key="navHome">Home</a></li>
+                    <li><a href="products.html" data-lang-key="navProducts">Products</a></li>
+                    <li><a href="projects.html" data-lang-key="navProjects">Projects</a></li>
+                    <li><a href="contact.html" data-lang-key="navContact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerSupport">Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerContactUs">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Energy St, Riyadh, KSA</p>
+                <p><i class="fas fa-envelope"></i> info@megapower.com</p>
+                <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 MEGA POWER. All Rights Reserved.</p>
+        </div> 
+    
+    
+    
+    
+    </footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

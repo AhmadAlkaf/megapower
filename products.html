@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | MEGA POWER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/mega-power-logo.png" alt="MEGA POWER Logo" class="logo-light">
+                <img src="assets/mega-power-logo.png" alt="MEGA POWER Logo" class="logo-dark">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-lang-key="navHome">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link" data-lang-key="navProducts">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="menu-column"><h3 data-lang-key="navByCategory">By Category</h3><a href="#">Residential Series</a><a href="#">Commercial Series</a></div>
+                            <div class="menu-column"><h3 data-lang-key="navByCapacity">By Capacity</h3><a href="single-product.html">5.12 kWh (MP-H5)</a><a href="#">10.24 kWh (MP-H10)</a></div>
+                            <div class="menu-column featured-product"><img src="assets/product1.png" alt="Featured Product"><h4 data-lang-key="navFeatured">Featured: MP-H10</h4></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="projects.html" class="nav-link" data-lang-key="navProjects">Projects</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link" data-lang-key="navNews">News</a></li>
+                <!--<li class="nav-item"><a href="contact.html" class="nav-link" data-lang-key="navContact">Contact Us</a></li>!-->
+            </ul>
+            <div class="controls">
+                <button id="theme-switcher" aria-label="Switch Theme">🌙</button>
+                <button id="lang-switcher" aria-label="Switch Language">AR</button>
+            </div>
+        </nav>
+    </header>  
+
+
+    <main>
+        <!-- Page Header -->
+
+        <!-- Products Listing Section -->
+        <section class="products-list-section">
+            <div class="products-list-container">
+                <!-- Filters Sidebar (الفلاتر) -->
+                <aside class="filters-sidebar" data-aos="fade-right">
+                    <!-- Search Filter -->
+                    <div class="filter-group">
+                        <h3 data-lang-key="filterSearch">Search Products</h3>
+                        <div class="search-box">
+                            <input type="text" id="product-search" placeholder="e.g., MP-H5">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Category Filter -->
+                    <div class="filter-group">
+                        <h3 data-lang-key="filterCategories">Product Categories</h3>
+                        <ul class="category-list">
+                            <li><button class="filter-btn active" data-category="all">All Products</button></li>
+                            <li><button class="filter-btn" data-category="residential">Residential Series</button></li>
+                            <li><button class="filter-btn" data-category="commercial">Commercial Series</button></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Products Grid (شبكة المنتجات) -->
+                <div class="products-grid-main" data-aos="fade-up">
+                    <!-- Product Card 1 -->
+                    <div class="product-card" data-category="residential" data-name="MEGA POWER MP-H5">
+                        <div class="product-image-container">
+                            <img src="assets/1.png" alt="MP-H5">
+                        </div>
+                        <div class="product-content">
+                            <h3>MEGA POWER MP-H5</h3>
+                            <p>5.12 kWh capacity, perfect for residential use and solar energy storage.</p>
+                            <a href="single-product.html" class="cta-button-small" data-lang-key="viewDetails">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card" data-category="residential" data-name="MEGA POWER MP-H15">
+                        <div class="product-image-container">
+                             <img src="assets/1.png" alt="MP-H15">
+                        </div>
+                        <div class="product-content">
+                            <h3>MEGA POWER MP-H15</h3>
+                            <p>15.36 kWh high-capacity battery for full home backup and energy independence.</p>
+                            <a href="single-product.html" class="cta-button-small" data-lang-key="viewDetails">View Details</a>
+                        </div>
+                    </div>
+                     <!-- Product Card 3 (Commercial) -->
+                    <div class="product-card" data-category="commercial" data-name="MEGA POWER MP-C50">
+                        <div class="product-image-container">
+                             <img src="assets/1.png" alt="MP-C50">
+                        </div>
+                        <div class="product-content">
+                            <h3>MEGA POWER MP-C50</h3>
+                            <p>50 kWh solution for small businesses, clinics, and offices. (Coming Soon)</p>
+                            <a href="#" class="cta-button-small disabled" data-lang-key="viewDetails">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <img src="assets/mega-power-logo-white.png" alt="Logo" class="footer-logo">
+                <p data-lang-key="footerSlogan">Your trusted partner for energy storage solutions.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerQuickLinks">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-lang-key="navHome">Home</a></li>
+                    <li><a href="products.html" data-lang-key="navProducts">Products</a></li>
+                    <li><a href="projects.html" data-lang-key="navProjects">Projects</a></li>
+                    <li><a href="contact.html" data-lang-key="navContact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerSupport">Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerContactUs">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Energy St, Riyadh, KSA</p>
+                <p><i class="fas fa-envelope"></i> info@megapower.com</p>
+                <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 MEGA POWER. All Rights Reserved.</p>
+        </div> 
+    
+    
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP-H5 | MEGA POWER Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/mega-power-logo.png" alt="MEGA POWER Logo" class="logo-light">
+                <img src="assets/mega-power-logo.png" alt="MEGA POWER Logo" class="logo-dark">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-lang-key="navHome">Home</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link" data-lang-key="navProducts">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="menu-column"><h3 data-lang-key="navByCategory">By Category</h3><a href="#">Residential Series</a><a href="#">Commercial Series</a></div>
+                            <div class="menu-column"><h3 data-lang-key="navByCapacity">By Capacity</h3><a href="single-product.html">5.12 kWh (MP-H5)</a><a href="#">10.24 kWh (MP-H10)</a></div>
+                            <div class="menu-column featured-product"><img src="assets/product1.png" alt="Featured Product"><h4 data-lang-key="navFeatured">Featured: MP-H10</h4></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="projects.html" class="nav-link" data-lang-key="navProjects">Projects</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link" data-lang-key="navNews">News</a></li>
+                <!--<li class="nav-item"><a href="contact.html" class="nav-link" data-lang-key="navContact">Contact Us</a></li>!-->
+            </ul>
+            <div class="controls">
+                <button id="theme-switcher" aria-label="Switch Theme">🌙</button>
+                <button id="lang-switcher" aria-label="Switch Language">AR</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail-section">
+            <div class="product-main-info">
+                <!-- Product Gallery (معرض الصور) -->
+                <div class="product-gallery-container" data-aos="fade-right">
+                    <div class="main-image">
+                        <img src="assets/1.png" alt="Main product view" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="assets/1.png" alt="Thumbnail 1" class="thumbnail active">
+                        <img src="assets/2.jpeg" alt="Thumbnail 2" class="thumbnail">
+                        <img src="assets/4.jpeg" alt="Thumbnail 3" class="thumbnail">
+                    </div>
+                </div>
+
+                <!-- Product Summary (ملخص المنتج) -->
+                <div class="product-summary" data-aos="fade-left">
+                    <h1 class="product-title" data-lang-key="productTitle_MPH5">MEGA POWER MP-H5</h1>
+                    <p class="product-subtitle" data-lang-key="productSubtitle_MPH5">5.12kWh Residential Energy Storage</p>
+                    <div class="key-specs">
+                        <div class="spec-item"><i class="fas fa-battery-full"></i> 5.12 kWh</div>
+                        <div class="spec-item"><i class="fas fa-recycle"></i> >6000 Cycles</div>
+                        <div class="spec-item"><i class="fas fa-shield-alt"></i> LiFePO4 Safety</div>
+                    </div>
+                    <p class="short-desc">Our MP-H5 is the cornerstone of home energy independence, offering a perfect balance of capacity, safety, and longevity. Ideal for storing solar energy and ensuring your home stays powered during outages.</p>
+                </div>
+            </div>
+
+            <!-- Detailed Info Tabs (تفاصيل المنتج والتبويبات) -->
+            <div class="product-detailed-info" data-aos="fade-up">
+                <div class="tab-buttons">
+                    <button class="tab-link active" onclick="openTab(event, 'Description')" data-lang-key="tabDesc">Description</button>
+                    <button class="tab-link" onclick="openTab(event, 'Downloads')" data-lang-key="tabDownloads">Downloads</button>
+                </div>
+                
+                <!-- Description Content (محتوى الوصف - Rich Text) -->
+                <div id="Description" class="tab-content rich-text-content active">
+                    <h3 data-lang-key="tabDesc">Product Description</h3>
+                    <p>The <strong>MEGA POWER MP-H5</strong> represents the next generation of home energy storage. Engineered for reliability and performance, it integrates seamlessly with new or existing solar panel systems. Its sleek, stackable design allows for easy installation and scalability, meaning you can expand your energy storage capacity as your needs grow.</p>
+                    <img src="assets/product-lifestyle.jpg" alt="Product in a home setting" class="inline-image">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li><strong>High-Efficiency LiFePO4 Cells:</strong> Provides longer lifespan and superior safety compared to traditional batteries.</li>
+                        <li><strong>Advanced BMS:</strong> Our integrated Battery Management System protects against overcharging, over-discharging, and extreme temperatures.</li>
+                        <li><strong>Scalable Architecture:</strong> Start with one unit and add up to 15 more in parallel for a massive storage capacity. For more details, <a href="contact.html">contact our support team</a>.</li>
+                    </ul>
+                </div>
+
+                <!-- Downloads Content (التحميلات) -->
+                <div id="Downloads" class="tab-content">
+                    <h3>Downloads</h3>
+                    <ul class="download-list">
+                        <li><a href="#" download><i class="fas fa-file-pdf"></i> MP-H5 Datasheet.pdf</a></li>
+                        <li><a href="#" download><i class="fas fa-file-alt"></i> Installation Manual.pdf</a></li>
+                        <li><a href="#" download><i class="fas fa-file-powerpoint"></i> Inverter Compatibility List.pdf</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <img src="assets/mega-power-logo-white.png" alt="Logo" class="footer-logo">
+                <p data-lang-key="footerSlogan">Your trusted partner for energy storage solutions.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerQuickLinks">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-lang-key="navHome">Home</a></li>
+                    <li><a href="products.html" data-lang-key="navProducts">Products</a></li>
+                    <li><a href="projects.html" data-lang-key="navProjects">Projects</a></li>
+                    <li><a href="contact.html" data-lang-key="navContact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerSupport">Support</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-lang-key="footerContactUs">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Energy St, Riyadh, KSA</p>
+                <p><i class="fas fa-envelope"></i> info@megapower.com</p>
+                <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 MEGA POWER. All Rights Reserved.</p>
+        </div> 
+    
+        
+    
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
